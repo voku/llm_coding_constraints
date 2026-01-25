@@ -501,7 +501,7 @@ const App: React.FC = () => {
             </div>
             
             <div className="mt-8 text-center">
-                <a href="https://github.com/voku/placeholder" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-600 text-sm font-mono border-b border-dashed border-slate-300 hover:border-slate-500 transition-colors">
+                <a href="https://github.com/voku/llm_coding_constraints" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-slate-600 text-sm font-mono border-b border-dashed border-slate-300 hover:border-slate-500 transition-colors">
                     Contribute on GitHub
                 </a>
             </div>
