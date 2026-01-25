@@ -1,56 +1,91 @@
 # Crayons & Walls
 
-A time-machine journey through the history of AI constraints, explaining why LLMs lack boundaries and how to fix it.
+A visual timeline that explores how AI constraints evolved over time, built as a production-ready single-page app with Vite + React.
 
-## Getting Started
+## Highlights
+
+- Timeline-driven UI with era visuals and interactive navigation.
+- Content is data-driven, so updates happen in one place.
+- Lightweight Vite build that is ready for GitHub Pages.
+
+## Quickstart
 
 ### Prerequisites
 
-- Node.js (v18+)
-- npm or yarn
+- Node.js 18+
+- npm (recommended)
 
-### Installation
+### Install
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/voku/placeholder.git
-   cd crayons-and-walls
-   ```
+```bash
+npm install
+```
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+### Development
 
-3. Run the development server:
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
-4. Build for production:
-   ```bash
-   npm run build
-   ```
+### Production Build
+
+```bash
+npm run build
+```
+
+### Preview the Production Build
+
+```bash
+npm run preview
+```
 
 ## Key Files Detector
 
-If you are a developer or AI assistant trying to navigate this codebase, use the following prompt to identify critical files:
+Use this helper prompt to quickly identify the most important files when onboarding new contributors or AI assistants:
 
 ```
-You are a Key Files Detector. Your job is to identify the most critical files in a project for a developer jumping in. 
+You are a Key Files Detector. Your job is to identify the most critical files in a project for a developer jumping in.
 Look for entry points, main logic components, data constants, and configuration files.
 
 For this project, the key files are:
-1. App.tsx - The main application logic, layout, and state management.
-2. constants.ts - Contains the 'TIME_MACHINE_DATA' which drives the content of the app.
-3. components/EraVisuals.tsx - Contains the SVG visualizations for each era.
-4. components/TimeDial.tsx - The navigation component for the timeline.
-5. index.html - The entry point HTML file.
+1. index.html - The HTML entry point that bootstraps the app.
+2. index.tsx - The React entry point that mounts the application.
+3. App.tsx - The main application layout, logic, and state management.
+4. constants.ts - Timeline data that powers the era content.
+5. components/ - Shared UI elements like the time dial and era visuals.
+6. vite.config.ts - Build configuration, including the GitHub Pages base path.
 ```
+
+## Project Structure
+
+```
+.
+├── App.tsx
+├── components/
+├── constants.ts
+├── index.html
+├── index.tsx
+├── public/
+│   ├── favicon.svg
+│   ├── icon-192.svg
+│   ├── icon-512.svg
+│   └── site.webmanifest
+├── types.ts
+└── vite.config.ts
+```
+
+## Deployment (GitHub Pages)
+
+This project is configured to deploy to GitHub Pages using the Vite build output.
+
+1. Push to `main`.
+2. GitHub Actions builds the site and publishes the `dist/` directory.
+
+If you rename the repository, update the `base` path in `vite.config.ts` to match the new repo name.
 
 ## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. Please open an issue to discuss significant changes.
 
 ## License
 
