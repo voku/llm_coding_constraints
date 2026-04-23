@@ -144,15 +144,8 @@ export const TimeDial: React.FC<TimeDialProps> = ({
   onSelectEra
 }) => {
   const [showMap, setShowMap] = useState(false);
-  const [isMinimized, setIsMinimized] = useState(false);
+  const [isMinimized, setIsMinimized] = useState(true);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Default to minimized on mobile devices to save space
-    if (window.innerWidth < 768) {
-        setIsMinimized(true);
-    }
-  }, []);
 
   // Close menu when clicking outside
   useEffect(() => {
