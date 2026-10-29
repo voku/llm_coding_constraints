@@ -219,7 +219,7 @@ export const TimeDial: React.FC<TimeDialProps> = ({
                     className="w-full text-left p-2 rounded hover:bg-blue-50 border border-transparent hover:border-blue-200 group flex items-center justify-between transition-all relative z-10"
                  >
                     <div className="flex flex-col">
-                       <span className={`text-[10px] font-bold uppercase tracking-wider ${era.id === 'PRESENT' ? 'text-green-600' : 'text-slate-500'}`}>
+                       <span className="text-[10px] font-bold uppercase tracking-wider text-slate-500">
                           {era.year}
                        </span>
                        <span className="text-xs font-bold text-slate-800 truncate max-w-[160px]">
